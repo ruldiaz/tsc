@@ -119955,6 +119955,7 @@ exports.User = void 0;
 var modnarjs_1 = __importDefault(require("modnarjs"));
 var User = /** @class */function () {
   function User() {
+    this.color = 'red';
     this.name = modnarjs_1.default.name.fName();
     this.location = {
       lat: modnarjs_1.default.number.float() * -1 / 10,
@@ -119982,6 +119983,7 @@ exports.Company = void 0;
 var modnarjs_1 = __importDefault(require("modnarjs"));
 var Company = /** @class */function () {
   function Company() {
+    this.color = 'red';
     this.companyName = modnarjs_1.default.name.lName() + " " + 'ltd';
     this.catchPhrase = modnarjs_1.default.name.fName() + " " + "phrase";
     this.location = {
@@ -120028,7 +120030,7 @@ var CustomMap = /** @class */function () {
     });
     marker.addListener('click', function () {
       var infoWindow = new google.maps.InfoWindow({
-        content: 'Hi there!'
+        content: mappable.markerContent()
       });
       infoWindow.open(_this.googleMap, marker);
     });
