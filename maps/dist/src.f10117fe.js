@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../node_modules/modnarjs/src/names/female.js":[function(require,module,exports) {
+})({"node_modules/modnarjs/src/names/female.js":[function(require,module,exports) {
 "use strict";
 exports.__esModule = true;
 exports.f = void 0;
@@ -5126,7 +5126,7 @@ exports.f = [
     "Geeta",
 ];
 
-},{}],"../../../node_modules/modnarjs/src/names/male.js":[function(require,module,exports) {
+},{}],"node_modules/modnarjs/src/names/male.js":[function(require,module,exports) {
 "use strict";
 exports.__esModule = true;
 exports.m = void 0;
@@ -8077,7 +8077,7 @@ exports.m = [
     "Vibhu",
 ];
 
-},{}],"../../../node_modules/modnarjs/src/names/lastname.js":[function(require,module,exports) {
+},{}],"node_modules/modnarjs/src/names/lastname.js":[function(require,module,exports) {
 "use strict";
 exports.__esModule = true;
 exports.l = void 0;
@@ -96884,7 +96884,7 @@ exports.l = [
     "AALDERINK",
 ];
 
-},{}],"../../../node_modules/modnarjs/src/names/name.js":[function(require,module,exports) {
+},{}],"node_modules/modnarjs/src/names/name.js":[function(require,module,exports) {
 "use strict";
 exports.__esModule = true;
 exports.l = exports.m = exports.f = void 0;
@@ -96895,7 +96895,7 @@ exports.m = male_1.m;
 var lastname_1 = require("./lastname");
 exports.l = lastname_1.l;
 
-},{"./female":"../../../node_modules/modnarjs/src/names/female.js","./male":"../../../node_modules/modnarjs/src/names/male.js","./lastname":"../../../node_modules/modnarjs/src/names/lastname.js"}],"../../../node_modules/modnarjs/src/words/words.js":[function(require,module,exports) {
+},{"./female":"node_modules/modnarjs/src/names/female.js","./male":"node_modules/modnarjs/src/names/male.js","./lastname":"node_modules/modnarjs/src/names/lastname.js"}],"node_modules/modnarjs/src/words/words.js":[function(require,module,exports) {
 "use strict";
 exports.__esModule = true;
 exports.words = void 0;
@@ -116901,7 +116901,7 @@ exports.words = [
     "bizjournalshire",
 ];
 
-},{}],"../../../node_modules/modnarjs/src/net/domain.js":[function(require,module,exports) {
+},{}],"node_modules/modnarjs/src/net/domain.js":[function(require,module,exports) {
 "use strict";
 exports.__esModule = true;
 exports.domain_arr = void 0;
@@ -118395,7 +118395,7 @@ exports.domain_arr = [
     "ZW",
 ];
 
-},{}],"../../../node_modules/modnarjs/src/country/country.js":[function(require,module,exports) {
+},{}],"node_modules/modnarjs/src/country/country.js":[function(require,module,exports) {
 "use strict";
 exports.__esModule = true;
 exports.country_arr = void 0;
@@ -118595,7 +118595,7 @@ exports.country_arr = [
     "Zimbabwe",
 ];
 
-},{}],"../../../node_modules/modnarjs/src/animals/animal.js":[function(require,module,exports) {
+},{}],"node_modules/modnarjs/src/animals/animal.js":[function(require,module,exports) {
 "use strict";
 exports.__esModule = true;
 exports.animals = void 0;
@@ -119124,7 +119124,7 @@ exports.animals = [
     "Water buffalo",
 ];
 
-},{}],"../../../node_modules/modnarjs/modnarjs.js":[function(require,module,exports) {
+},{}],"node_modules/modnarjs/modnarjs.js":[function(require,module,exports) {
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -119940,7 +119940,7 @@ var modnarjs = {
 };
 module.exports = modnarjs;
 
-},{"./src/names/name":"../../../node_modules/modnarjs/src/names/name.js","./src/words/words":"../../../node_modules/modnarjs/src/words/words.js","./src/net/domain":"../../../node_modules/modnarjs/src/net/domain.js","./src/country/country":"../../../node_modules/modnarjs/src/country/country.js","./src/animals/animal":"../../../node_modules/modnarjs/src/animals/animal.js"}],"src/User.ts":[function(require,module,exports) {
+},{"./src/names/name":"node_modules/modnarjs/src/names/name.js","./src/words/words":"node_modules/modnarjs/src/words/words.js","./src/net/domain":"node_modules/modnarjs/src/net/domain.js","./src/country/country":"node_modules/modnarjs/src/country/country.js","./src/animals/animal":"node_modules/modnarjs/src/animals/animal.js"}],"src/User.ts":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -119961,10 +119961,13 @@ var User = /** @class */function () {
       lng: modnarjs_1.default.number.float() / 10
     };
   }
+  User.prototype.markerContent = function () {
+    return "User Name: ".concat(this.name);
+  };
   return User;
 }();
 exports.User = User;
-},{"modnarjs":"../../../node_modules/modnarjs/modnarjs.js"}],"src/Company.ts":[function(require,module,exports) {
+},{"modnarjs":"node_modules/modnarjs/modnarjs.js"}],"src/Company.ts":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -119986,22 +119989,71 @@ var Company = /** @class */function () {
       lng: modnarjs_1.default.number.float() / 10
     };
   }
+  Company.prototype.markerContent = function () {
+    return "\n      <div>\n        <h1>Company Name: ".concat(this.companyName, "</h1>\n        <h3>CatchPhrase: ").concat(this.catchPhrase, "</h3>\n      </div>\n    ");
+  };
   return Company;
 }();
 exports.Company = Company;
-},{"modnarjs":"../../../node_modules/modnarjs/modnarjs.js"}],"src/index.ts":[function(require,module,exports) {
+},{"modnarjs":"node_modules/modnarjs/modnarjs.js"}],"src/CustomMap.ts":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.CustomMap = void 0;
+var CustomMap = /** @class */function () {
+  function CustomMap(divId) {
+    var element = document.getElementById(divId);
+    if (element instanceof HTMLElement) {
+      this.googleMap = new google.maps.Map(element, {
+        zoom: 1,
+        center: {
+          lat: 0,
+          lng: 0
+        }
+      });
+    } else {
+      throw new Error("Element with ID '".concat(divId, "' not found."));
+    }
+  }
+  CustomMap.prototype.addMarker = function (mappable) {
+    var _this = this;
+    var marker = new google.maps.Marker({
+      map: this.googleMap,
+      position: {
+        lat: mappable.location.lat,
+        lng: mappable.location.lng
+      }
+    });
+    marker.addListener('click', function () {
+      var infoWindow = new google.maps.InfoWindow({
+        content: 'Hi there!'
+      });
+      infoWindow.open(_this.googleMap, marker);
+    });
+  };
+  return CustomMap;
+}();
+exports.CustomMap = CustomMap;
+},{}],"src/index.ts":[function(require,module,exports) {
+"use strict";
+
+/// <reference types="@types/google.maps" />
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var User_1 = require("./User");
 var Company_1 = require("./Company");
+var CustomMap_1 = require("./CustomMap");
 var user = new User_1.User();
 var company = new Company_1.Company();
 console.log(user);
 console.log(company);
-},{"./User":"src/User.ts","./Company":"src/Company.ts"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var customMap = new CustomMap_1.CustomMap('map');
+customMap.addMarker(user);
+customMap.addMarker(company);
+},{"./User":"src/User.ts","./Company":"src/Company.ts","./CustomMap":"src/CustomMap.ts"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -120026,7 +120078,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8136" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62011" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -120170,5 +120222,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.ts"], null)
+},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.ts"], null)
 //# sourceMappingURL=/src.f10117fe.js.map

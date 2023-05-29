@@ -1,0 +1,17 @@
+16
+38C:\Users\RAUL\Desktop\tsc\tsc\maps\src133297783568919003 1
+39C:\Users\RAUL\Desktop\tsc\tsc\maps\dist133297783568919003 1
+41C:\Users\RAUL\Desktop\tsc\tsc\maps\.cache133297783568606573 1
+45C:\Users\RAUL\Desktop\tsc\tsc\maps\index.html133297783568919003 0
+49C:\Users\RAUL\Desktop\tsc\tsc\maps\src\Company.ts133297783568919003 0
+50C:\Users\RAUL\Desktop\tsc\tsc\maps\dist\index.html133297783568606573 0
+47C:\Users\RAUL\Desktop\tsc\tsc\maps\src\index.ts133297783568919003 0
+46C:\Users\RAUL\Desktop\tsc\tsc\maps\src\User.ts133297783568919003 0
+55C:\Users\RAUL\Desktop\tsc\tsc\maps\dist\src.f10117fe.js133297783568762805 0
+59C:\Users\RAUL\Desktop\tsc\tsc\maps\dist\src.f10117fe.js.map133297783568919003 0
+44C:\Users\RAUL\Desktop\tsc\tsc\maps\.cache\4a133297783568606573 1
+44C:\Users\RAUL\Desktop\tsc\tsc\maps\.cache\65133297783568606573 1
+44C:\Users\RAUL\Desktop\tsc\tsc\maps\.cache\8b133297783568606573 1
+80C:\Users\RAUL\Desktop\tsc\tsc\maps\.cache\8b\5263623843937883d7a0da49ed9341.json133297783568606573 0
+80C:\Users\RAUL\Desktop\tsc\tsc\maps\.cache\65\022a08fe758e72ba4e282839f3e4ca.json133297783568606573 0
+80C:\Users\RAUL\Desktop\tsc\tsc\maps\.cache\4a\fd53c604234793442c0ec2d65f0e6f.json133297783568606573 0

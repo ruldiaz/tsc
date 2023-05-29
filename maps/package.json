@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@types/google.maps": "^3.53.2",
+    "modnarjs": "^1.1.6"
+  }
+}

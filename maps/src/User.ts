@@ -13,5 +13,10 @@ export class User {
       lat: modnarjs.number.float()*-1/10,
       lng: modnarjs.number.float()/10
     }
+
+  }
+
+  markerContent(): string {
+    return `User Name: ${this.name}`;
   }
 }
