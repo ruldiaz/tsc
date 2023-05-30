@@ -1,7 +1,8 @@
-export class NumbersCollection {
-    
-    constructor(public data: number[]) {
+import { Sorter } from "./Sorter";
 
+export class NumbersCollection extends Sorter {
+    constructor(public data: number[]) {
+        super();
     }
 
     swap( leftIndex: number, rightIndex: number ): void {
