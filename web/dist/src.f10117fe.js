@@ -5533,13 +5533,6 @@ var user = new User_1.User({
   name: 'new record',
   age: 0
 });
-user.events.on('change', function () {
-  console.log('change');
-});
-user.events.on('change', function () {
-  console.log('change 2');
-});
-user.events.trigger('change');
 },{"./models/User":"src/models/User.ts"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
