@@ -4,6 +4,9 @@ import { get, controller } from './decorators';
 @controller('/auth')
 class LoginController {
   @get('/login')
+  // @use(middleware1)
+  // @use(middleware2)
+  // @use(middleware3)
   getLogin(req: Request, res: Response):void {
     res.send(`
     <form method='POST'>

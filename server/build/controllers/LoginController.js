@@ -13,12 +13,19 @@ var decorators_1 = require("./decorators");
 var LoginController = /** @class */ (function () {
     function LoginController() {
     }
+    // @use(middleware1)
+    // @use(middleware2)
+    // @use(middleware3)
     LoginController.prototype.getLogin = function (req, res) {
         res.send("\n    <form method='POST'>\n      <div>\n        <label>Email</label>\n        <input name='email' />\n      </div>\n      <div>\n        <label>Password</label>\n        <input name='password' type='password' />\n      </div>\n      <button>Submit</button>\n    </form>\n    ");
     };
     ;
     __decorate([
-        (0, decorators_1.get)('/login'),
+        (0, decorators_1.get)('/login')
+        // @use(middleware1)
+        // @use(middleware2)
+        // @use(middleware3)
+        ,
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [Object, Object]),
         __metadata("design:returntype", void 0)
